@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Nataly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header>
+        <img class="logo-alura" src="imagenes/logo.png" alt="Logo de Alura">
+        <img class="logo-nataly" src="imagenes/logo-nataly.png" alt="Logo author">
+    </header>
+
+    <main>
+
+        <form class="form-section">
+            <textarea class="form-input" name="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="btn-container">
+                <div class="alert-msj">
+                    <img src="imagenes/icon-i.png" alt="Icono de alerta">
+                    <span>Sólo letras minúsculas y sin acentos</span>
+                </div>
+            </div>
+            <div class="submit-container">               
+                <input class="form-btn" type="button" value="Encriptar">
+                <input class="form-btn form-btn--sec" type="button" value="Desencriptar"> 
+            </div>        
+        </form>
+
+        <aside class="resultado">
+            <img src="imagenes/persona2.png" alt="Imagen de una persona buscando con una lupa" class="resultado-img">            
+            <div class="msj-container">
+                <h3 class="resultado-title">Ningún mensaje fue encontrado</h3>
+                <p class="resultado-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="result-btn form-btn form-btn--sec hidden">Copiar</button>
+            </div>        
+        </aside>
+
+    </main>
+
+    <footer>
+        <p class="author">Desarrollado por Nataly Suaza para Alura </p>
+        <a class="link-linkedin" href=" http://www.linkedin.com/in/nataly-suaza"> <img class="logo-linkedin" src="imagenes/logo-linkedin.png" alt="Logo LinkedIn"> LinkedIn</a>
+    </footer>
+
+    <script src="encriptador.js"></script>
+</body>
+
+</html>
