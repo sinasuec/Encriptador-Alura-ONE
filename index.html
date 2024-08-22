@@ -1,39 +1,39 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador Nataly</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!DOCTYPE html> <!--Indica el tipo de documento que es html-->
+<html lang="es"> <!-- Indica el lenguaje-->
+<head>   <!--contiene la información de la página como las codificaciones, caracteres, título de la página y enlaces-->
+    <meta charset="UTF-8"> <!--codificación de caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Ajuste responsive-->
+    <title>Encriptador Nataly</title> <!--Titulo de la página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--link para optimizar las cargas de las fientes-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!--enlaza el archivo a los estilos css-->
     
 </head>
 
-<body>
-    <header>
+<body> <!--es la parte que contiene el contenido visible de la página-->
+    <header> <!-- Es el elemento que define la cabecera-->
         <img class="logo-alura" src="imagenes/logo.png" alt="Logo de Alura">
         <img class="logo-nataly" src="imagenes/logo-nataly.png" alt="Logo author">
     </header>
 
-    <main>
+    <main> <!--contiene el contenido princpal del documento, es decir lo central de la página que en este caso es el encriptador y el desencriptador-->
 
-        <form class="form-section">
-            <textarea class="form-input" name="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-            <div class="btn-container">
-                <div class="alert-msj">
-                    <img src="imagenes/icon-i.png" alt="Icono de alerta">
-                    <span>Sólo letras minúsculas y sin acentos</span>
+        <form class="form-section"> <!--es un formulario para ingresar texto-->
+            <textarea class="form-input" name="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea> <!--es un area de texto donde el usuario ingresará el mensaje-->
+            <div class="btn-container"> <!--Para mostrar el contenedor del mensaje-->
+                <div class="alert-msj"> <!--Para mostrar el mensaje de alerta--> <!--El div se utiliza como una caja contenedora para el contenido principal de la pagina-->
+                    <img src="imagenes/icon-i.png" alt="Icono de alerta"> <!--imagen que va a acompañar al mensaje de alertra-->
+                    <span>Sólo letras minúsculas y sin acentos</span> <!--PAra indicarle al usuario las instrucciones -->
                 </div>
             </div>
-            <div class="submit-container">               
+            <div class="submit-container">    <!--continee los botones de acción-->           
                 <input class="form-btn" type="button" value="Encriptar">
                 <input class="form-btn form-btn--sec" type="button" value="Desencriptar"> 
             </div>        
         </form>
 
-        <aside class="resultado">
+        <aside class="resultado"> <!-- área para mostrar el resultado--> <!--El asidese utiliza  para presentar el contenido secundario o para incluir información adicional-->
             <img src="imagenes/persona2.png" alt="Imagen de una persona buscando con una lupa" class="resultado-img">            
             <div class="msj-container">
                 <h3 class="resultado-title">Ningún mensaje fue encontrado</h3>
@@ -44,12 +44,12 @@
 
     </main>
 
-    <footer>
+    <footer> <!--Es la sección final de la página-->
         <p class="author">Desarrollado por Nataly Suaza para Alura </p>
         <a class="link-linkedin" href=" http://www.linkedin.com/in/nataly-suaza"> <img class="logo-linkedin" src="imagenes/logo-linkedin.png" alt="Logo LinkedIn"> LinkedIn</a>
     </footer>
 
-    <script src="encriptador.js"></script>
+    <script src="encriptador.js"></script> <!-- Es el enlace con el archivo .js que es el que contiene la logia para que la página funcione-->
 </body>
 
 </html>
