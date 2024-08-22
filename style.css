@@ -1,5 +1,5 @@
-:root{
-    --dark-blue: #2f3e46;
+:root{  /*estilos generales que se aplican a todo , en este caso muestra variables transversales de colores y tipografía*/
+    --dark-green: #2f3e46;
     --main-color: #F3F5FC;
     --ligth-blue: #D8DFE8;
     --inter-font: "Inter", sans-serif;
@@ -20,7 +20,7 @@ header{
 }
 
 main{
-    display:flex;
+    display:flex; /*para organizar los elementos*/
     justify-content: space-around;
     
 }
@@ -51,13 +51,13 @@ main{
     outline: none;  
     font-family: var(--inter-font);
     font-size: 3.2rem;
-    color: var(--dark-blue);
+    color: var(--dark-green);
     margin-bottom: 3rem;
-    overflow: auto;
+    overflow: auto; /*muestra una barra de desplazamiento para contenidos muy grandes*/
 }
 
 ::placeholder{
-    color: var(--dark-blue);   
+    color: var(--dark-green);   
 }
 
 .alert-msj{
@@ -69,14 +69,14 @@ main{
 }
 
 .form-btn{
-    background: var(--dark-blue);
+    background: var(--dark-green);
     color: white;
     font-size: 1.6rem;
     padding: 1rem 2rem;
     width: 328px;
     height: 67px;
     border-radius: 24px;
-    border: 1px solid var(--dark-blue);
+    border: 1px solid var(--dark-green);
     font-weight: 600;
     margin-right: 10px;
    
@@ -88,9 +88,9 @@ main{
 }
 
 button:hover{
-    background-color:var(--dark-blue); 
-  transform: scale(1.1); 
-  color: white;
+    background-color:var(--dark-green); 
+    transform: scale(1.1); 
+    color: white;
 }
 
 
@@ -119,7 +119,7 @@ button:hover{
 }
 
 .resultado-img{
-    display: block;
+    display: block; /*Muestra la imagen como un elemento de bloque para que ocupe el ancho completo disponible*/
 }
 
 .hidden{
@@ -128,7 +128,7 @@ button:hover{
 
 footer{
     text-align: center;
-    background-color: var(--dark-blue);
+    background-color: var(--dark-green);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +158,7 @@ footer{
     padding: -55px;
 }
     
-@media screen and (max-width:500px) {
+@media screen and (max-width:500px) {  /*Para las funcionalidades responsive*/
     main{
         flex-direction: column;
     }
